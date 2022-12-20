@@ -29,8 +29,11 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 ### Breakdown of County Votes and Vote Percentage 
 
 1. I used Python math with the following formula and also to format the data in a view that was more pleasant to the eyes.
+
 *  Vote count formula after retrieving the county names
-        '''votes = county_votes[county_name]'''
+    
+    votes = county_votes[county_name]
+
 *  Vote percentage formula
         vote_percentage = float(votes) / float(total_votes) * 100
         county_results = (
