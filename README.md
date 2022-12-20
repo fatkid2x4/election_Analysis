@@ -19,10 +19,10 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 
 ## Election-Audit Results
 
-### There were 369,711 votes cast
+### There were 369,711 votes cast in the election!
 
-    1. I used the following
-    * I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
+1. I used the following
+            * I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
 
 ### Breakdown of County Votes and Vote Percentage 
 
@@ -40,7 +40,7 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 ### County with the largest Votes
 
 1. I used the following formula to get largest votes.  using if statement and greater then statements to bring out the largest county.
-    *if (votes > largest_count) and (vote_percentage > largest_percentage):
+    * if (votes > largest_count) and (vote_percentage > largest_percentage):
             largest_count = votes
             largest_county = county_name
             largest_percentage = vote_percentage
@@ -57,10 +57,10 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 ### Which Candidate Won?
 
 1. The following formulate used to determine election winner, votes, and vote percentage
-    * votes = candidate_votes[candidate_name]
-     vote_percentage = float(votes) / float(total_votes) * 100
-     candidate_results = (
-            f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+* votes = candidate_votes[candidate_name]
+* vote_percentage = float(votes) / float(total_votes) * 100
+* candidate_results = (
+    * f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
 2. Diana DeGette was declared the winner winning 73.8% of the total votes which was 272,892 votes.
 
 ## Election-Audit Summary
