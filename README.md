@@ -33,9 +33,9 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 *  Vote count formula after retrieving the county names
 *  votes = county_votes[county_name]
 *  Vote percentage formula
-        vote_percentage = float(votes) / float(total_votes) * 100
-        county_results = (
-            f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        * vote_percentage = float(votes) / float(total_votes) * 100
+        * county_results = (
+            * f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
 2. Denver county received 306,055 which was 82.8% of the total votes.
 3. Jefferson county received 38,855 votes for 10.5% of the total votes
 4. Arapaho county received 24,801 votes for 6.7% of the total votes.
@@ -44,9 +44,9 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 
 1. I used the following formula to get largest votes.  using if statement and greater then statements to bring out the largest county.
     * if (votes > largest_count) and (vote_percentage > largest_percentage):
-            largest_count = votes
-            largest_county = county_name
-            largest_percentage = vote_percentage
+        * largest_count = votes
+        * largest_county = county_name
+        * largest_percentage = vote_percentage
 2. Denver was the county with the largest vote count
  
 ### Breakdown of Candidate Votes and Vote Percentage 
