@@ -19,15 +19,17 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 
 ## Election-Audit Results
 
-### There were 369,711 votes cast using the following formula
-    1. I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
+### There were 369,711 votes cast
+
+    1. I used the following
+    * I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
 
 ### Breakdown of County Votes and Vote Percentage 
 
 1. I used Python math with the following formula and also to format the data in a view that was more pleasant to the eyes.
-    *  Vote count formula after retrieving the county names
+*  Vote count formula after retrieving the county names
         votes = county_votes[county_name]
-    *  Vote percentage formula
+*  Vote percentage formula
         vote_percentage = float(votes) / float(total_votes) * 100
         county_results = (
             f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
