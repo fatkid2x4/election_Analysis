@@ -20,14 +20,14 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 ## Election-Audit Results
 
 ### There were 369,711 votes cast using the following formula
-    * I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
+    1. I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
 
 ### Breakdown of County Votes and Vote Percentage 
 
 1. I used Python math with the following formula and also to format the data in a view that was more pleasant to the eyes.
-    * Vote count formula after retrieving the county names
+    *  Vote count formula after retrieving the county names
         votes = county_votes[county_name]
-    * Vote percentage formula
+    *  Vote percentage formula
         vote_percentage = float(votes) / float(total_votes) * 100
         county_results = (
             f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
@@ -55,7 +55,7 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 ### Which Candidate Won?
 
 1. The following formulate used to determine election winner, votes, and vote percentage
-    *votes = candidate_votes[candidate_name]
+    * votes = candidate_votes[candidate_name]
      vote_percentage = float(votes) / float(total_votes) * 100
      candidate_results = (
             f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
