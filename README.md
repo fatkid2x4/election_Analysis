@@ -19,47 +19,49 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 
 ## Election-Audit Results
 
-###There were 369,711 votes cast using the following formula
-    *I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
+### There were 369,711 votes cast using the following formula
+    * I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
 
 ### Breakdown of County Votes and Vote Percentage 
 
-a. I used Python math with the following formula and also to format the data in a view that was more pleasant to the eyes.
-    *Vote count formula after retrieving the county names
+1. I used Python math with the following formula and also to format the data in a view that was more pleasant to the eyes.
+    * Vote count formula after retrieving the county names
         votes = county_votes[county_name]
-    *Vote percentage formula
+    * Vote percentage formula
         vote_percentage = float(votes) / float(total_votes) * 100
         county_results = (
             f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
-b. Denver county received 306,055 which was 82.8% of the total votes.
-c. Jefferson county received 38,855 votes for 10.5% of the total votes
-d. Arapaho county received 24,801 votes for 6.7% of the total votes.
+2. Denver county received 306,055 which was 82.8% of the total votes.
+3. Jefferson county received 38,855 votes for 10.5% of the total votes
+4. Arapaho county received 24,801 votes for 6.7% of the total votes.
 
 ### County with the largest Votes
 
-a.I used the following formula to get largest votes.  using if statement and greater then statements to bring out the largest county.
+1. I used the following formula to get largest votes.  using if statement and greater then statements to bring out the largest county.
     *if (votes > largest_count) and (vote_percentage > largest_percentage):
             largest_count = votes
             largest_county = county_name
             largest_percentage = vote_percentage
-b. Denver was the county with the largest vote count
+2. Denver was the county with the largest vote count
  
 ### Breakdown of Candidate Votes and Vote Percentage 
-a. Same process was used here as with counties.  Find all the candidate names, formula to calculate count and percentage.
-b. Charles Casper Stockholm received 23.0% of the votes for 85,213 total votes
-c. Diana DeGette received 73.8% of the votes for 272,892 total votes
-d. Taymon Anthony Doane received 3.1% of the votes for 11,606 total votes
+
+1. Same process was used here as with counties.  Find all the candidate names, formula to calculate count and percentage.
+2. Charles Casper Stockholm received 23.0% of the votes for 85,213 total votes
+3. Diana DeGette received 73.8% of the votes for 272,892 total votes
+4. Taymon Anthony Doane received 3.1% of the votes for 11,606 total votes
 
 
-### Which Candidate won?
-a.The following formulate used to determine election winner, votes, and vote percentage
+### Which Candidate Won?
+
+1. The following formulate used to determine election winner, votes, and vote percentage
     *votes = candidate_votes[candidate_name]
      vote_percentage = float(votes) / float(total_votes) * 100
      candidate_results = (
             f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
-b.Diana DeGette was declared the winner winning 73.8% of the total votes which was 272,892 votes.
+2. Diana DeGette was declared the winner winning 73.8% of the total votes which was 272,892 votes.
 
-##Election-Audit Summary
+## Election-Audit Summary
 
 As you can see we took a very large amount of data and simplified it to show the end results.  It would be very easy to take the entire state using the script to calculate total state results.  Of course, we would have to include text for a complete state vs counties.  We could also take this script and use for county elections by using cities instead of counties.  We could do a national election results using states vs counties and get a national breakdown.
 
