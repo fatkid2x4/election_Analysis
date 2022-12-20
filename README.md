@@ -4,14 +4,14 @@
 
 A Colorado Board of Elections employee, named Tom, had given me the following task.
 
-1.Calculate the Total number of votes cast
-2.Get a  complete list of candidates who received votes
-3.Need Total number of votes each candidate received
-4.Get Percentage of votes each candidate won
-5.Determine the winner of the election based on popular vote
-6.Determine which country had the most votes
-7.Show how many votes per county
-8.Show percentage of votes per country
+1. Calculate the Total number of votes cast
+2. Get a  complete list of candidates who received votes
+3. Need Total number of votes each candidate received
+4. Get Percentage of votes each candidate won
+5. Determine the winner of the election based on popular vote
+6. Determine which country had the most votes
+7. Show how many votes per county
+8. Show percentage of votes per country
 
 ## Resources
 -Data Source: election_results.csv
