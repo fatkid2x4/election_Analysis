@@ -22,7 +22,9 @@ A Colorado Board of Elections employee, named Tom, had given me the following ta
 ### There were 369,711 votes cast in the election!
 
 1. I used the following
-            * I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using total_votes += 1
+
+* I set the code starting at 0 and then added to the total vote counts as it read through the whole of the date using 
+* total_votes += 1
 
 ### Breakdown of County Votes and Vote Percentage 
 
